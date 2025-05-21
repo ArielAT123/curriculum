@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +14,13 @@
     <title>Currículum de Ariel Arias</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+   
     <header class="header">
-        <h1>Currículum Vitae</h1>
-        <h2>Ariel Arias Tipán</h2>
-        <img class="foto" src="./image.jpeg" alt="Foto de Ariel Arias">
+        <h1 class="title">Currículum Vitae</h1>
+        <h2 class="subtitle">Ariel Arias Tipán</h2>
+        <img id="photo" src="./image.jpeg" alt="Foto de Ariel Arias">
         <nav class="nav-menu">
             <ul>
                 <li><a href="#contacto">Contacto</a></li>
@@ -31,22 +38,23 @@
     </header>
 
     <main class="main">
-        <div id="first">
+        <section id="first">
             <section id="contacto">
                 <h3>Contacto</h3>
                 <p>Correo: ariel.arias.tipan14@gmail.com</p>
                 <p>Teléfono: 0932665565</p>
                 <p>Ubicación: Escuela Superior Politécnica del Litoral, Guayaquil, Ecuador</p>
-                <iframe class="contact-map" 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.989008974694!2d-79.96981568518418!3d-2.147776998436041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13e7d66c2b3f%3A0xafe8b87e1b0e5f0!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1697901234567!5m2!1ses!2sec" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                <iframe class="contact-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.989008974694!2d-79.96981568518418!3d-2.147776998436041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13e7d66c2b3f%3A0xafe8b87e1b0e5f0!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1697901234567!5m2!1ses!2sec"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </section>
             <section id="resumen">
                 <h3>Resumen</h3>
-                <p>Tengo experiencia en varios lenguajes de programación de alto y bajo nivel, manejo de bases de datos SQL y NoSQL, y experiencia en el uso de Git. Visita mi perfil en <a href="https://github.com/ArielAT123" target="_blank" rel="noopener noreferrer">GitHub</a> para ver mis proyectos.</p>
+                <p>Tengo experiencia en varios lenguajes de programación de alto y bajo nivel, manejo de bases de datos
+                    SQL y NoSQL, y experiencia en el uso de Git. Visita mi perfil en <a
+                        href="https://github.com/ArielAT123" target="_blank" rel="noopener noreferrer">GitHub</a> para
+                    ver mis proyectos.</p>
             </section>
             <section id="habilidades">
                 <h3>Habilidades</h3>
@@ -62,7 +70,10 @@
             </section>
             <section id="video">
                 <h3>Video</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/v6kEanzJhpg?si=FU5kfkOCuBsmFAPd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v6kEanzJhpg?si=FU5kfkOCuBsmFAPd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
             <section id="logros-adicionales">
                 <h3></h3>
@@ -82,48 +93,52 @@
             </section>
             <section>
                 <table border="1" cellpadding="10" cellspacing="0">
-    <thead>
-        <tr>
-            <th colspan="3">Experiencias y Proyectos de Ariel Arias</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Proyecto</strong></td>
-            <td><strong>Descripción</strong></td>
-            <td><strong>Tecnologías</strong></td>
-        </tr>
-        <tr>
-            <td><strong>Tres en Raya con Minimax</strong></td>
-            <td>Desarrollo de un juego de tres en raya con inteligencia artificial utilizando el algoritmo Minimax.</td>
-            <td>Android Studio, Java</td>
-        </tr>
-        <tr>
-            <td><strong>Juego UNO</strong></td>
-            <td>Desarrollo de un juego de cartas UNO con interfaz gráfica y reglas personalizadas.</td>
-            <td>Android Studio, Java</td>
-        </tr>
-        <tr>
-            <td><strong>Voluntariado en Taller de Programación</strong></td>
-            <td>Voluntario en un taller de programación para jóvenes, enseñando los fundamentos básicos de la programación.</td>
-            <td>Java, Python</td>
-        </tr>
-    </tbody>
-</table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Experiencias y Proyectos de Ariel Arias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Proyecto</strong></td>
+                            <td><strong>Descripción</strong></td>
+                            <td><strong>Tecnologías</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tres en Raya con Minimax</strong></td>
+                            <td>Desarrollo de un juego de tres en raya con inteligencia artificial utilizando el
+                                algoritmo Minimax.</td>
+                            <td>Android Studio, Java</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Juego UNO</strong></td>
+                            <td>Desarrollo de un juego de cartas UNO con interfaz gráfica y reglas personalizadas.</td>
+                            <td>Android Studio, Java</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Voluntariado en Taller de Programación</strong></td>
+                            <td>Voluntario en un taller de programación para jóvenes, enseñando los fundamentos básicos
+                                de la programación.</td>
+                            <td>Java, Python</td>
+                        </tr>
+                    </tbody>
+                </table>
 
             </section>
-        </div>
-        <div id="secondColumn">
+        </section>
+        <section id="secondColumn">
             <section id="experiencia-academica">
                 <h3>Experiencia Académica</h3>
                 <ul>
                     <li>
                         <strong>Desarrollo de un Tres en Raya</strong> - Proyecto Universitario
-                        <p>Creación de un juego de tres en raya utilizando el algoritmo Minimax en Android Studio. Implementación de lógica de inteligencia artificial para el comportamiento del oponente.</p>
+                        <p>Creación de un juego de tres en raya utilizando el algoritmo Minimax en Android Studio.
+                            Implementación de lógica de inteligencia artificial para el comportamiento del oponente.</p>
                     </li>
                     <li>
                         <strong>Desarrollo de un juego UNO</strong> - Proyecto Universitario
-                        <p>Diseño y desarrollo de un juego de cartas UNO en Android Studio, con interfaz gráfica y reglas personalizadas.</p>
+                        <p>Diseño y desarrollo de un juego de cartas UNO en Android Studio, con interfaz gráfica y
+                            reglas personalizadas.</p>
                     </li>
                 </ul>
             </section>
@@ -131,7 +146,8 @@
                 <h3>Educación</h3>
                 <ol>
                     <li><strong>Academia Naval Guayaquil</strong> - Graduado Bachillerato BGU (2023)</li>
-                    <li><strong>Escuela Superior Politécnica del Litoral</strong> - Graduado Bachillerato BGU (2023)</li>
+                    <li><strong>Escuela Superior Politécnica del Litoral</strong> - Graduado Bachillerato BGU (2023)
+                    </li>
                 </ol>
             </section>
             <section id="premios">
@@ -146,11 +162,14 @@
                 <ul>
                     <li>
                         <span>Tres en Raya con Minimax</span>
-                        <p>Desarrollado en Android Studio. Implementación del algoritmo Minimax para la lógica del juego, permitiendo al oponente tomar decisiones óptimas. Uso de Java para la programación y diseño de la interfaz gráfica.</p>
+                        <p>Desarrollado en Android Studio. Implementación del algoritmo Minimax para la lógica del
+                            juego, permitiendo al oponente tomar decisiones óptimas. Uso de Java para la programación y
+                            diseño de la interfaz gráfica.</p>
                     </li>
                     <li>
                         <span>Juego de Cartas UNO</span>
-                        <p>Creación de un juego de cartas UNO en Android Studio. Desarrollo de las reglas del juego, diseño de la interfaz gráfica y manejo de eventos en tiempo real. Programado en Java.</p>
+                        <p>Creación de un juego de cartas UNO en Android Studio. Desarrollo de las reglas del juego,
+                            diseño de la interfaz gráfica y manejo de eventos en tiempo real. Programado en Java.</p>
                     </li>
                 </ul>
             </section>
@@ -158,24 +177,29 @@
                 <h3>Referencias</h3>
                 <article>
                     <blockquote>
-                        <p>"Ariel demostró una gran capacidad técnica y compromiso en el desarrollo de nuestro proyecto."</p>
+                        <p>"Ariel demostró una gran capacidad técnica y compromiso en el desarrollo de nuestro
+                            proyecto."</p>
                     </blockquote>
                     <p><span>Juan Pérez</span>, Profesor de Programación, ESPOL</p>
-                    <p>Colaboré con Ariel en el proyecto de Tres en Raya, donde destacó por su implementación del algoritmo Minimax y su atención al detalle en la interfaz gráfica.</p>
+                    <p>Colaboré con Ariel en el proyecto de Tres en Raya, donde destacó por su implementación del
+                        algoritmo Minimax y su atención al detalle en la interfaz gráfica.</p>
                 </article>
                 <article>
                     <blockquote>
                         <p>"Trabajar con Ariel fue una experiencia excepcional; siempre aportó ideas innovadoras."</p>
                     </blockquote>
                     <p><span>María Gómez</span>, Líder de Proyecto, Hackathon 2023</p>
-                    <p>Ariel participó en nuestro equipo durante el hackathon, contribuyendo con código limpio en React Native y resolviendo problemas complejos bajo presión.</p>
+                    <p>Ariel participó en nuestro equipo durante el hackathon, contribuyendo con código limpio en React
+                        Native y resolviendo problemas complejos bajo presión.</p>
                 </article>
                 <article>
                     <blockquote>
-                        <p>"Ariel es un profesional confiable y dedicado, con habilidades sobresalientes en bases de datos."</p>
+                        <p>"Ariel es un profesional confiable y dedicado, con habilidades sobresalientes en bases de
+                            datos."</p>
                     </blockquote>
                     <p><span>Carlos López</span>, Tutor de Bases de Datos, Curso en Línea</p>
-                    <p>SupervisÉ a Ariel en un curso de NoSQL, donde diseñó una base de datos MongoDB eficiente para un proyecto de aplicación móvil.</p>
+                    <p>SupervisÉ a Ariel en un curso de NoSQL, donde diseñó una base de datos MongoDB eficiente para un
+                        proyecto de aplicación móvil.</p>
                 </article>
             </section>
             <section id="contactame" class="form-section">
@@ -194,7 +218,8 @@
 
                     <label>Método de contacto preferido:</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="contact-method" value="email" required>Correo electrónico</label>
+                        <label><input type="radio" name="contact-method" value="email" required>Correo
+                            electrónico</label>
                         <label><input type="radio" name="contact-method" value="phone">Teléfono</label>
                     </div>
 
@@ -211,7 +236,24 @@
                     <button type="submit">Enviar</button>
                 </form>
             </section>
-        </div>
+        </section>
+        
+        
+
     </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Ariel Arias Tipán. Todos los derechos reservados.</p>
+        <p>Diseñado y desarrollado por Ariel Arias con 💻 y ☕</p>
+        <div class="social-links">
+            <a href="https://github.com/ArielAT123" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="mailto:ariel.arias.tipan14@gmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/arielarias" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+<script src="./scripts.js"></script>
+<script> changesTextColor("title")</script>
+
 </body>
+
 </html>
