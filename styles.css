@@ -1,10 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Atma', cursive;
-    background-color: #232946; /* Background */
-    color: #b8c1ec; /* Paragraph (para texto general del body) */
-}
+
 
 .header {
     text-align: center;
@@ -285,3 +279,17 @@ blockquote p {
     margin: 0;
     color: #b8c1ec; /* Paragraph */
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu header */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Atma', cursive;
+    background-color: #232946;
+    color: #b8c1ec;
+}
+
+/* Resto de tu CSS */

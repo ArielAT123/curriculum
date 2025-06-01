@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
-</style>
-
+    
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Curriculum, CV, Ariel Arias, Experiencia, Habilidades, Educación">
@@ -19,7 +19,7 @@
 
     <header class="header">
         <section class="gif-background">
-            
+
             <h1 class="title">Currículum Vitae</h1>
             <h2 class="subtitle">Ariel Arias Tipán</h2>
             <section class="profile-photo">
@@ -57,8 +57,8 @@
             <section id="resumen">
                 <h2>Resumen</h2>
                 <p>Tengo experiencia en varios lenguajes de programación de alto y bajo nivel, manejo de bases de datos
-                    SQL y NoSQL, y experiencia en el uso de Git. Visita mi perfil en <a
-                    <link id="github" href="https://github.com/ArielAT123" target="_blank" rel="noopener noreferrer"    />GitHub</a> para
+                    SQL y NoSQL, y experiencia en el uso de Git. Visita mi perfil en <a <link id="github"
+                        href="https://github.com/ArielAT123" target="_blank" rel="noopener noreferrer" />GitHub</a> para
                     ver mis proyectos.</p>
             </section>
             <section id="habilidades">
@@ -181,34 +181,19 @@
                 <h2>Referencias</h2>
                 <article>
                     <blockquote>
-                        <p>"Ariel demostró una gran capacidad técnica y compromiso en el desarrollo de nuestro
-                            proyecto."</p>
+                        <p>"Ariel fue clave en el desarrollo de la app, mostrando liderazgo y dominio técnico."</p>
                     </blockquote>
-                    <p><span>Juan Pérez</span>, Profesor de Programación, ESPOL</p>
-                    <p>Colaboré con Ariel en el proyecto de Tres en Raya, donde destacó por su implementación del
-                        algoritmo Minimax y su atención al detalle en la interfaz gráfica.</p>
-                </article>
-                <article>
-                    <blockquote>
-                        <p>"Trabajar con Ariel fue una experiencia excepcional; siempre aportó ideas innovadoras."</p>
-                    </blockquote>
-                    <p><span>María Gómez</span>, Líder de Proyecto, Hackathon 2023</p>
-                    <p>Ariel participó en nuestro equipo durante el hackathon, contribuyendo con código limpio en React
-                        Native y resolviendo problemas complejos bajo presión.</p>
-                </article>
-                <article>
-                    <blockquote>
-                        <p>"Ariel es un profesional confiable y dedicado, con habilidades sobresalientes en bases de
-                            datos."</p>
-                    </blockquote>
-                    <p><span>Carlos López</span>, Tutor de Bases de Datos, Curso en Línea</p>
-                    <p>SupervisÉ a Ariel en un curso de NoSQL, donde diseñó una base de datos MongoDB eficiente para un
-                        proyecto de aplicación móvil.</p>
+                    <p><span>Alfonso Tipán</span>, Developer encargado en el lanzamiento de TipiZone en la plataforma de
+                        iOS</p>
+                    <p>Trabajamos juntos en el despliegue de TipiZone, donde Ariel asumió responsabilidades críticas y
+                        destacó por su capacidad para integrar funcionalidades complejas usando React Native y Xcode
+                        para la plataforma iOS.</p>
                 </article>
             </section>
+
             <section id="contactame" class="form-section">
                 <h2>Contáctame</h2>
-                <form action="#" method="post">
+                <form id="contact-form">
                     <label for="name">Nombre completo:</label>
                     <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
 
@@ -225,7 +210,7 @@
                     <label><input type="radio" name="contact-method" value="phone">Teléfono</label>
 
                     <label>Horarios disponibles:</label>
-                    <label><input type="checkbox" name="availability" value="morning" required>Mañana</label>
+                    <label><input type="checkbox" name="availability" value="morning">Mañana</label>
                     <label><input type="checkbox" name="availability" value="afternoon">Tarde</label>
                     <label><input type="checkbox" name="availability" value="evening">Noche</label>
 
@@ -233,8 +218,31 @@
                     <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí"></textarea>
 
                     <button type="submit">Enviar</button>
+                    <p id="form-message"></p>
                 </form>
+
+                <script>
+                    document.getElementById("contact-form").addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const name = document.getElementById("name").value.trim();
+                        const reason = document.getElementById("reason").value;
+                        const contactMethod = document.querySelector('input[name="contact-method"]:checked');
+                        const message = document.getElementById("message").value.trim();
+                        const checkboxes = document.querySelectorAll('input[name="availability"]:checked');
+                        const formMessage = document.getElementById("form-message");
+
+                        if (name && reason && contactMethod && checkboxes.length > 0 && message) {
+                            formMessage.textContent = "✅ Formulario enviado correctamente.";
+                            formMessage.style.color = "green";
+                        } else {
+                            formMessage.textContent = "⚠️ Por favor, completa todos los campos antes de enviar.";
+                            formMessage.style.color = "red";
+                        }
+                    });
+                </script>
             </section>
+
         </section>
 
 
@@ -251,7 +259,7 @@
         </div>
     </footer>
     <script src="./scripts.js"></script>
-    
+   
 </body>
 
 </html>

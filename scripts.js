@@ -51,3 +51,33 @@ function changesBackgroundColor(className) {
     index = (index + 1) % colores.length;
   }, 2000); // cada 2 segundos para que se note bien la transición
 }
+function enviarFormulario() {
+  const nombre = document.getElementById("nombre").value.trim();
+  const correo = document.getElementById("correo").value.trim();
+  const mensaje = document.getElementById("mensaje").value.trim();
+  const resultado = document.getElementById("resultado");
+
+  if (nombre && correo && mensaje) {
+    resultado.textContent = "✅ Datos enviados correctamente.";
+    resultado.style.color = "green";
+    // Aquí podrías enviar los datos con fetch o resetear el formulario si quieres
+  } else {
+    resultado.textContent = "⚠️ Por favor, completa todos los campos.";
+    resultado.style.color = "red";
+  }
+}
+document.querySelectorAll('.nav-menu a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
